@@ -5,7 +5,7 @@ const targetPath = './src/environments/environment.prod.ts';
 require('dotenv').load();
 // `environment.ts` file structure
 const envConfigFile = `export const environment = {
-  USER_ID: '${process.env.USER_ID}'
+  USER_ID: '${process.env['USER_ID']}'
 };
 `;
 console.log(
